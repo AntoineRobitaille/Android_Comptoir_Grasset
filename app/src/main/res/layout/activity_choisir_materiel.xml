@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    tools:context="com.example.eleves.android_comptoir_grasset.ChoisirMateriel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTop"
+        >
+
+        <TextView
+            android:text="CHOISIR MATÉRIEL"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="MATÉRIEL" />
+
+
+        <Spinner
+            android:id="@+id/spin_materiel"
+            android:layout_marginTop="10dp"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="30dp"
+            android:entries="@array/materiel" />
+
+
+        <ListView
+
+            android:id="@+id/list_materiel"
+            android:layout_width="match_parent"
+            android:layout_height="259dp" />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btn_envoyer"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginRight="35dp"
+        android:text="ENVOYER DEMANDE"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Comptoir IG Pret</string>
+
+    <string-array name="professeurs">
+        <item>-</item>
+        <item>M.Gareau</item>
+        <item>M.Guerreiro</item>
+        <item>Mme.Lapointe</item>
+    </string-array>
+
+    <string-array name="materiel">
+        <item>-</item>
+        <item>Camera</item>
+        <item>Appareil photo</item>
+        <item>trépied</item>
+        <item>Batterie</item>
+    </string-array>
+</resources>

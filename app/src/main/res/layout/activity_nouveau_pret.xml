@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eleves.android_comptoir_grasset.NouveauPret">
+
+    <!-- Main  container -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTop">
+
+        <TextView
+            android:text="NOUVEAU PRÊT"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="NOM" />
+
+        <EditText
+            android:id="@+id/nom_etudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:inputType="textPersonName" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="COURRIEL" />
+
+        <EditText
+            android:id="@+id/courriel_etudiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColorHint="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="TITRE DU COURS" />
+
+        <AutoCompleteTextView
+            android:id="@+id/titre_cours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+
+            android:inputType="textPersonName" />
+
+        <!--Layout proffesseur -->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PROFESSEUR" />
+
+            <Spinner
+                android:id="@+id/spin_professeur"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/professeurs"
+                ></Spinner>
+
+        </LinearLayout>
+
+        <!--Layout Date picker -->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.54"
+                android:text="DATE DE L'EMPRUNT" />
+
+            <EditText
+                android:id="@+id/date_editTx"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                android:ems="10"
+                android:inputType="date" />
+
+            <ImageButton
+                android:id="@+id/img_date_picker"
+                android:layout_weight="1.48"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="COMMENTAIRE" />
+
+
+        <EditText
+            android:id="@+id/comment_editTx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            android:ems="10"
+            android:inputType="textLongMessage" />
+
+
+
+        <!--Layout button-->
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btn_annuler"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:layout_marginRight="35dp"
+                android:text="Annuler"
+                android:layout_weight="1"
+
+                />
+
+
+            <Button
+
+                android:id="@+id/btn_choix_materiel"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="Choisir materiel"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_annuler"-->
+    <!--android:layout_width="@dimen/small_button_width"-->
+    <!--android:layout_height="@dimen/small_button_height"-->
+    <!--android:background="@drawable/button_bg_rounded_corners"-->
+    <!--android:layout_marginRight="@dimen/margin20"-->
+    <!--android:text="Annuler"-->
+
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+
+    <!--<Button-->
+
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="@dimen/small_button_width"-->
+    <!--android:layout_height="@dimen/small_button_height"-->
+    <!--android:background="@drawable/button_bg_rounded_corners"-->
+    <!--android:text="Choisir materiel"-->
+
+    <!--android:layout_below="@+id/linearLayout"-->
+    <!--android:layout_toEndOf="@+id/btn_annuler"-->
+    <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/nom_etudiante"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignEnd="@+id/button"-->
+    <!--android:layout_below="@+id/textView"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/id_etudiante"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignStart="@+id/nom_etudiante"-->
+    <!--android:layout_below="@+id/nom_etudiante"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinnerProfesseur"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/textView3"-->
+    <!--android:layout_alignStart="@+id/textView3"-->
+    <!--android:layout_alignEnd="@+id/id_etudiante" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignStart="@+id/nom_etudiante"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:text="Nom" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignStart="@+id/id_etudiante"-->
+    <!--android:layout_below="@+id/nom_etudiante"-->
+    <!--android:text="ID étudiante" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Professeur"-->
+    <!--android:layout_below="@+id/id_etudiante"-->
+    <!--android:layout_alignStart="@+id/id_etudiante" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/Équi"-->
+    <!---->
+    <!--android:layout_alignStart="@+id/Équi"-->
+    <!--android:layout_alignEnd="@+id/spinnerProfesseur" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/Équi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignStart="@+id/spinnerProfesseur"-->
+    <!--android:layout_below="@+id/spinnerProfesseur"-->
+    <!--android:text="Recherche Matériel" />-->
+
+    <!--<DatePicker-->
+    <!--android:id="@+id/datePicker2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignStart="@+id/spinner2"-->
+    <!--android:layout_below="@+id/spinner2"-->
+    <!--android:layout_above="@+id/button"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginEnd="76dp"-->
+    <!--android:layout_marginBottom="31dp" />-->
+
+
+
+</RelativeLayout>

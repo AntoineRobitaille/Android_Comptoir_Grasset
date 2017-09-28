@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTop"
+        >
+
+        <TextView
+            android:text="MES DEMANDES"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/numero_demande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demande 3"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date_demande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 / 10 / 2017"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/status_demande"
+
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="EN ATTENTE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="0.04" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
